@@ -1,16 +1,18 @@
 <table class="table table-bordered table-striped">
-    <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Year</th>
-        <th>Rating</th>
-        <th>Director</th>
-    </tr>
-    <tr *ngFor='let movie of movies'>
-        <td> {{ movie.id }}</td>
-        <td> {{ movie.title}}</td>
-        <td> {{ movie.year}}</td>
-        <td> {{ movie.rating }}</td>
-        <td> {{ movie.director }}</td>
-    </tr>
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Rating</th>
+            <th>Director</th>
+        </tr>
+        <tr *ngFor='let movie of movies'>
+            <td> {{ movie.id }}</td>
+            <td> {{ movie.title}}</td>
+            <td> {{ movie.year}}</td>
+            <td> {{ movie.rating }}</td>
+            <td> {{ movie.director }}</td>
+        </tr>
+    </tbody>
 </table>
