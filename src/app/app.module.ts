@@ -11,6 +11,7 @@ import { CreditListComponent } from './feature/credit/credit-list/credit-list.co
 import { UserListComponent } from './feature/user/user-list/user-list.component';
 import { GenreListComponent } from './feature/genre/genre-list/genre-list.component';
 import { MovieGenreListComponent } from './feature/movie-genre/movie-genre-list/movie-genre-list.component';
+import { MenuComponent } from './core/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MovieGenreListComponent } from './feature/movie-genre/movie-genre-list/
     CreditListComponent,
     UserListComponent,
     GenreListComponent,
-    MovieGenreListComponent
+    MovieGenreListComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
