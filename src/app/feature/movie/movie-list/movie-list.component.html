@@ -8,8 +8,7 @@
             <th>Id</th>
             <th>Title</th>
             <th>Year</th>
-            <th>Rating</th>
-            <th>Director</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -17,8 +16,13 @@
             <td> {{ movie.id }}</td>
             <td> {{ movie.title}}</td>
             <td> {{ movie.year}}</td>
-            <td> {{ movie.rating }}</td>
-            <td> {{ movie.director }}</td>
+            <td> <a routerLink='/movie-detail/{{movie.id}}'>
+                    <img width='20' height='20' src='assets/details.png' title='Movie Details'>
+                </a> |
+                <a routerLink='/movie-edit/{{movie.id}}'>
+                    <img width='20' height='20' src='assets/pencil-icon.png' title='Edit Movie'>
+                </a> |
+            </td>
         </tr>
     </tbody>
 </table>

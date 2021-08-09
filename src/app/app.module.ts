@@ -12,6 +12,9 @@ import { UserListComponent } from './feature/user/user-list/user-list.component'
 import { GenreListComponent } from './feature/genre/genre-list/genre-list.component';
 import { MovieGenreListComponent } from './feature/movie-genre/movie-genre-list/movie-genre-list.component';
 import { MenuComponent } from './core/menu/menu.component';
+import { MovieCreateComponent } from './feature/movie/movie-create/movie-create.component';
+import { MovieEditComponent } from './feature/movie/movie-edit/movie-edit.component';
+import { MovieDetailComponent } from './feature/movie/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { MenuComponent } from './core/menu/menu.component';
     UserListComponent,
     GenreListComponent,
     MovieGenreListComponent,
-    MenuComponent
+    MenuComponent,
+    MovieCreateComponent,
+    MovieEditComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
