@@ -1,16 +1,21 @@
+<link href="credit-list.component.css">
+<h2>{{title}}</h2>
+
 <table class="table table-bordered table-striped">
-    </body>
+    <thead class="table-dark">
         <tr>
             <th>Id</th>
             <th>ActorId</th>
             <th>MovieId</th>
             <th>Role</th>
         </tr>
+    </thead>
+    <tbody>
         <tr *ngFor='let credit of credits'>
             <td> {{ credit.id }}</td>
             <td> {{ credit.actor.id}}</td>
             <td> {{ credit.movie.id}}</td>
             <td> {{ credit.role }}</td>
         </tr>
-    <body>
+    </tbody>
 </table>

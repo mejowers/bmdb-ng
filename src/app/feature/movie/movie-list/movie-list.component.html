@@ -1,5 +1,9 @@
+<link href="movie-list.component.css">
+
+<h2>{{title}}</h2>
+
 <table class="table table-bordered table-striped">
-    <tbody>
+    <thead class="table-dark">
         <tr>
             <th>Id</th>
             <th>Title</th>
@@ -7,6 +11,8 @@
             <th>Rating</th>
             <th>Director</th>
         </tr>
+    </thead>
+    <tbody>
         <tr *ngFor='let movie of movies'>
             <td> {{ movie.id }}</td>
             <td> {{ movie.title}}</td>

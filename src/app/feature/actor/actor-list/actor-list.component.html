@@ -1,5 +1,8 @@
-<table class="table table-bordered">
-    <tbody>
+<link href="actor-list.component.css">
+<h2>{{title}}</h2>
+
+<table class="table table-bordered table-striped border-primary">
+    <thead class="table-dark">
         <tr>
             <th>Id</th>
             <th>FirstName</th>
@@ -7,6 +10,8 @@
             <th>Gender</th>
             <th>BirthDate</th>
         </tr>
+    </thead>
+    <tbody>
         <tr *ngFor='let actor of actors'>
             <td> {{ actor.id }}</td>
             <td> {{ actor.firstName}}</td>

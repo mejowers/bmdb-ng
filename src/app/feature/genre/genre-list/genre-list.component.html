@@ -1,0 +1,17 @@
+<link href="genre-list.component.css">
+<h2>{{title}}</h2>
+
+<table class="table table-bordered table-striped border-primary">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let genre of genres'>
+            <td> {{ genre.id }}</td>
+            <td> {{ genre.name}}</td>
+    </tbody>
+</table>
+
