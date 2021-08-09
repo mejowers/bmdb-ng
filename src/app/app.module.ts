@@ -20,7 +20,7 @@ import { MovieGenreListComponent } from './feature/movie-genre/movie-genre-list/
     CreditListComponent,
     UserListComponent,
     GenreListComponent,
-    MovieGenreComponent
+    MovieGenreListComponent
   ],
   imports: [
     BrowserModule,
