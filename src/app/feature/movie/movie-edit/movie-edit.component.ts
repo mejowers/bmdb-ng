@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Movie } from 'src/app/model/movie.class';
+import { ActorService } from 'src/app/service/actor.service';
 import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class MovieEditComponent implements OnInit {
 
   title: string = "Movie-Edit";
   movie: Movie = new Movie();
-  submitBtnTitle: string = "Save";
+  submitBtnTitle: string = "Edit";
   movieId: number = 0;
 
   constructor(

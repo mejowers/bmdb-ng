@@ -12,7 +12,7 @@ export class MovieCreateComponent implements OnInit {
 
   title: string = "Movie-Create";
   movie: Movie = new Movie();
-  submitBtnTitle: string = "Save";
+  submitBtnTitle: string = "Create";
 
   constructor(
     private movieSvc:MovieService,
