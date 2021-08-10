@@ -35,7 +35,5 @@ export class MovieEditComponent implements OnInit {
         this.router.navigateByUrl("/movie-list");},
         err => {console.log(err)}
     );
-
   }
-
 }

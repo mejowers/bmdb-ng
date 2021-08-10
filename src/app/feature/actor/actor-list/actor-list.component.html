@@ -1,6 +1,10 @@
 <!-- <link href="actor-list.component.css"> -->
-<h2>{{title}}</h2>
-
+<section class="heading">
+    <span class="page-title font-weight-bold font-italic">{{title}}</span>
+    <a routerLink='/actor-create'>
+        <img width='20' height='20' src='assets/add-icon.png' title='Add New'>
+    </a>
+    </section>
 <table class="table table-bordered table-striped">
     <thead class="table-dark">
         <tr>
@@ -9,6 +13,7 @@
             <th>LastName</th>
             <th>Gender</th>
             <th>BirthDate</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -18,6 +23,13 @@
             <td> {{ actor.lastName}}</td>
             <td> {{ actor.gender }}</td>
             <td> {{ actor.birthDate}}</td>
+            <td> <a routerLink='/actor-detail/{{actor.id}}'>
+                <img width='20' height='20' src='assets/details.png' title='Actor Details'>
+            </a> |
+            <a routerLink='/actor-edit/{{actor.id}}'>
+                <img width='20' height='20' src='assets/pencil-icon.png' title='Edit Actor'>
+            </a>
+        </td>
         </tr>
     </tbody>
 </table>
