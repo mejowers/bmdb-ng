@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Movie } from 'src/app/model/movie.class';
-import { ActorService } from 'src/app/service/actor.service';
 import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
