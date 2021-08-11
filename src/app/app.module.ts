@@ -21,6 +21,9 @@ import { ActorDetailComponent } from './feature/actor/actor-detail/actor-detail.
 import { CreditDetailComponent } from './feature/credit/credit-detail/credit-detail.component';
 import { CreditEditComponent } from './feature/credit/credit-edit/credit-edit.component';
 import { CreditCreateComponent } from './feature/credit/credit-create/credit-create.component';
+import { UserCreateComponent } from './feature/user/user-create/user-create.component';
+import { UserEditComponent } from './feature/user/user-edit/user-edit.component';
+import { UserDetailComponent } from './feature/user/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { CreditCreateComponent } from './feature/credit/credit-create/credit-cre
     ActorDetailComponent,
     CreditDetailComponent,
     CreditEditComponent,
-    CreditCreateComponent
+    CreditCreateComponent,
+    UserCreateComponent,
+    UserEditComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
