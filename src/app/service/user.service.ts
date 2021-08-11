@@ -23,7 +23,9 @@ export class UserService {
   } 
   
   create(user: User): Observable<User> {
-    return this.http.post(URL+"/", user) as Observable<User>;
+    console.log('user create: '+URL+'/');
+    console.log('user: ', user);
+    return this.http.post(URL+'/', user) as Observable<User>;
   }
 
   edit(user: User): Observable<User> {
@@ -33,5 +35,9 @@ export class UserService {
   delete(id: number): Observable<User> {
     return this.http.delete(URL+'/'+id) as Observable<User>;
   } 
+
+  login(user: User): Observable<User> {
+    return this.http.post(URL+'/login', user) as Observable<User>;
+  }
 
 }

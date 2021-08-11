@@ -14,6 +14,7 @@ export class ActorService {
     private http: HttpClient) { }
 
     list(): Observable<Actor[]> {
+      console.log('actor servise list: '+URL+'/');
       return this.http.get(URL+'/') as Observable<Actor[]>;
     }
     get(id: number): Observable<Actor> {
