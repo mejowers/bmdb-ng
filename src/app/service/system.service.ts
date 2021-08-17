@@ -13,7 +13,13 @@ export class SystemService {
   constructor(
     private router: Router
   ) { }
-
+  
+  checkLogin(): void {
+    if (this.loggedInUser.id == 0) {
+      console.log("User is not logged in... redirecting to login.");
+      this.router.navigateByUrl("/user-login");
+    }
+  }
  
 
 }

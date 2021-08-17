@@ -18,6 +18,8 @@ export class MovieListComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
+    this.systemSvc.checkLogin();
+    
     console.log("Movie List, checking loggedInUser in systemSvc:", this.systemSvc.loggedInUser);
     this.movieSvc.list().subscribe(
      resp => { this.movies = resp as Movie[]; 
