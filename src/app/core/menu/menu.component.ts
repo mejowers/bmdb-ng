@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'src/app/model/menu-item.class';
+import { User } from 'src/app/model/user.class';
 import { SystemService } from 'src/app/service/system.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { SystemService } from 'src/app/service/system.service';
 export class MenuComponent implements OnInit {
 
   menuItems: MenuItem[] = [];
+  
 
   constructor(
     private systemSvc: SystemService
