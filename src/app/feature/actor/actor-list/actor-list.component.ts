@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Actor } from 'src/app/model/actor.class';
-import { ActorService } from 'src/app/service/actor.service';
+import { ActorService } from 'src/app/service/Actor.service';
 
 @Component({
   selector: 'app-actor-list',

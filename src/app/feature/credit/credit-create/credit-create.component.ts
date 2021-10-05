@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Actor } from 'src/app/model/actor.class';
 import { Credit } from 'src/app/model/credit.class';
 import { Movie } from 'src/app/model/movie.class';
-import { ActorService } from 'src/app/service/actor.service';
+import { ActorService } from 'src/app/service/Actor.service';
 import { CreditService } from 'src/app/service/credit.service';
 import { MovieService } from 'src/app/service/movie.service';
 

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { User } from '../model/user.class';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { LoginView } from '../model/login-view.class';
 
 const URL: string = 'http://localhost:8080/api/users';
 
@@ -36,7 +37,7 @@ export class UserService {
     return this.http.delete(URL+'/'+id) as Observable<User>;
   } 
 
-  login(user: User): Observable<User> {
+  login(user: LoginView): Observable<User> {
     return this.http.post(URL+'/login', user) as Observable<User>;
   }
 
