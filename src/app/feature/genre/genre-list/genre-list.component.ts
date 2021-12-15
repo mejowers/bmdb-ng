@@ -22,5 +22,4 @@ export class GenreListComponent implements OnInit {
   
     }
   
-
 }
